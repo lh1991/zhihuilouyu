@@ -1,0 +1,45 @@
+extends fn/basic.pug
+append script
+  script(src="lib/jquery.js")
+  script(src="script/index.js")
+block cont
+  .main-cont
+    .left-cont
+      .power
+        .title 电能数据监控
+        .subtitle POWER DATE
+        #power
+        .data
+          .item 当前房间：会议室A
+          .item 用电量：15600kw/h
+          .item 用电倍率：120
+          .item 用电时长：12h
+      .lightEnergy
+        .title 光能数据监控
+        .subtitle LIGHT DATE
+        .item
+          .pie(id="lightEnergy1")
+          .text 办公室
+        .item
+          .pie(id="lightEnergy2")
+          .text 会议室
+      .waterEnergy
+        .title 水能数据监控
+        .subtitle WATER DATE
+        #waterEnergy
+    .center-cont
+      .bottom
+        .monitor
+    .right-cont
+      .humanTaffic
+        .title 人流量数据监控
+        .subtitle VISITONS FLOWDATE DATE
+        #humanTaffic
+      .parking
+        .title 电量数据监控
+        .subtitle POWER DATE
+        each val,index in ['A区','B区','C区','D区','E区','F区','G区','H区','I区']
+          .item
+            .pie(id="pie"+index)
+            .text=val
+

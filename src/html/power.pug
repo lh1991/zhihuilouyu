@@ -1,0 +1,45 @@
+extends fn/basic.pug
+append script
+  script(src="lib/jquery.js")
+  script(src="script/power.js")
+block cont
+  .main-cont
+    .left-cont
+      .subPro
+        .title 分项用能占比
+        .subtitle ITEM UTILIZATION
+        #sub-item
+      .floor
+        .title 楼层电力使用情况
+        .subtitle FLOOR POWER USE
+        #floor
+    .center-cont
+      .powercurve
+        .head 神州信源电力监控曲线图
+        .toolbar
+          fieldset.item
+            legend.text 最大值
+            .num.red 576KW
+          fieldset.item
+            legend.text 最大值时间
+            .num.red 10:42
+          fieldset.item
+            legend.text 最小值
+            .num.green 189KW
+          fieldset.item
+            legend.text 最小值时间
+            .num.green 10:42
+          fieldset.item
+            legend.text 平均值值
+            .num.blue 385KW
+        .powercurvechart(id="powercurvechart")
+        .minute  时间（M）
+    .right-cont
+      .loadCurve
+        .title 当日负载曲线
+        .subtitle DAY LOAD CURVE
+        #loadCurve
+      .floorSubUse
+        .title 楼层分项使用占比
+        .subtitle FLOOR SUB USE
+        #floorSubUse

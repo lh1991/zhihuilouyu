@@ -1,0 +1,17 @@
+extends fn/basic.pug
+append script
+  script(src="lib/jquery.js")
+  script(src="script/light.js")
+block cont
+  .main-cont
+    .light-cont
+      .left-cont
+        //img#lightIMG
+      .right-cont
+        .grid
+          .title 光伏发电系统数据表
+          .subtitle DATE SHEET OF PHOTOVOLTAIC SYSTEM
+        .charts
+          .item
+            .pie(id="lightpie1")
+

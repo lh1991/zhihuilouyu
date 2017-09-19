@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/basic.css">
+    <title> 智能楼宇监控管理 | </title>
+    <link rel="stylesheet" href="style/index.css">
+  </head>
+  <body>
+    <div class="m-root"></div><img id="chuansuo">
+    <div class="top-fixed clearfix">
+      <div class="top-left"><img src="image/LOGO.png"></div>
+      <div class="top-right">
+        <div class="top-time">
+          <div class="ms">14:39:25</div>
+          <div class="date">31/08/2017</div>
+        </div>
+      </div>
+      <div class="top-icon">
+        <div class="img"><img src="image/tq.png"></div>
+        <div class="img"><img src="image/wd.png"></div>
+      </div>
+      <div class="top-items">
+        <div class="item"><a class="active" href="../index.html"><img src="image/top0.png"></a>
+          <div class="text">主页</div>
+        </div>
+        <div class="item"><a class="img" href="../power.html"><img src="image/top1.png"></a>
+          <div class="text">电组</div>
+        </div>
+        <div class="item"><a class="img" href="../light.html"><img src="image/top2.png"></a>
+          <div class="text">光能</div>
+        </div>
+        <div class="item"><a class="img"><img src="image/top3.png"></a>
+          <div class="text">水能</div>
+        </div>
+        <div class="item"><a class="img"><img src="image/top4.png"></a>
+          <div class="text">人流量</div>
+        </div>
+        <div class="item"><a class="img"><img src="image/top5.png"></a>
+          <div class="text">停车场</div>
+        </div>
+      </div>
+    </div>
+    <div class="main-cont">
+      <div class="left-cont">
+        <div class="power">
+          <div class="title">电能数据监控</div>
+          <div class="subtitle">POWER DATE</div>
+          <div id="power"></div>
+          <div class="data">
+            <div class="item">当前房间：会议室A</div>
+            <div class="item">用电量：15600kw/h</div>
+            <div class="item">用电倍率：120</div>
+            <div class="item">用电时长：12h</div>
+          </div>
+        </div>
+        <div class="lightEnergy">
+          <div class="title">光能数据监控</div>
+          <div class="subtitle">LIGHT DATE</div>
+          <div class="item">
+            <div class="pie" id="lightEnergy1"></div>
+            <div class="text">办公室</div>
+          </div>
+          <div class="item">
+            <div class="pie" id="lightEnergy2"></div>
+            <div class="text">会议室</div>
+          </div>
+        </div>
+        <div class="waterEnergy">
+          <div class="title">水能数据监控</div>
+          <div class="subtitle">WATER DATE</div>
+          <div id="waterEnergy"></div>
+        </div>
+      </div>
+      <div class="center-cont">
+        <div class="bottom">
+          <div class="monitor"></div>
+        </div>
+      </div>
+      <div class="right-cont">
+        <div class="humanTaffic">
+          <div class="title">人流量数据监控</div>
+          <div class="subtitle">VISITONS FLOWDATE DATE</div>
+          <div id="humanTaffic"></div>
+        </div>
+        <div class="parking">
+          <div class="title">电量数据监控</div>
+          <div class="subtitle">POWER DATE</div>
+          <div class="item">
+            <div class="pie" id="pie0"></div>
+            <div class="text">A区</div>
+          </div>
+          <div class="item">
+            <div class="pie" id="pie1"></div>
+            <div class="text">B区</div>
+          </div>
+          <div class="item">
+            <div class="pie" id="pie2"></div>
+            <div class="text">C区</div>
+          </div>
+          <div class="item">
+            <div class="pie" id="pie3"></div>
+            <div class="text">D区</div>
+          </div>
+          <div class="item">
+            <div class="pie" id="pie4"></div>
+            <div class="text">E区</div>
+          </div>
+          <div class="item">
+            <div class="pie" id="pie5"></div>
+            <div class="text">F区</div>
+          </div>
+          <div class="item">
+            <div class="pie" id="pie6"></div>
+            <div class="text">G区</div>
+          </div>
+          <div class="item">
+            <div class="pie" id="pie7"></div>
+            <div class="text">H区</div>
+          </div>
+          <div class="item">
+            <div class="pie" id="pie8"></div>
+            <div class="text">I区</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="lib/echarts.js"></script>
+    <script src="script/basic.js"></script>
+    <script src="lib/jquery.js"></script>
+    <script src="script/index.js"></script>
+  </body>
+</html>

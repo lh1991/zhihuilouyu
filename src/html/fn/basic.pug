@@ -1,0 +1,49 @@
+extends ../tpl/basic.pug
+
+append style
+  link(rel="stylesheet", href="style/index.css")
+append script
+  script(src="script/basic.js")
+block page
+  - const range = n => [...Array(n).keys()]
+  .top-fixed.clearfix
+    .top-left
+        img(src="image/LOGO.png")
+    .top-right
+      .top-time
+        .ms 14:39:25
+        .date 31/08/2017
+    .top-icon
+      .img
+        img(src="image/tq.png")
+      .img
+        img(src="image/wd.png")
+    .top-items
+      .item
+        a.active(href='../index.html')
+          img(src="image/top0.png")
+        .text 主页
+      .item
+        a.img(href='../power.html')
+          img(src="image/top1.png")
+        .text 电组
+      .item
+        a.img(href='../light.html')
+          img(src="image/top2.png")
+        .text 光能
+      .item
+        a.img
+          img(src="image/top3.png")
+        .text 水能
+      .item
+        a.img
+          img(src="image/top4.png")
+        .text 人流量
+      .item
+        a.img
+          img(src="image/top5.png")
+        .text 停车场
+  block cont
+
+
+

@@ -1,0 +1,37 @@
+{
+  "name": "zhlyjkgl",
+  "version": "1.0.0",
+  "description": "智慧楼宇监控管理",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp dev",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.oschina.net/elbert196610/zhlyjkgl.git"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "IE 9"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "echarts": "^3.7.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-stylus": "^2.6.0",
+    "jquery": "^3.2.1",
+    "opn": "^5.1.0",
+    "postcss-pxtorem": "^4.0.1"
+  }
+}

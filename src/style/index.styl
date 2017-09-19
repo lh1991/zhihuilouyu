@@ -1,0 +1,317 @@
+.top-fixed
+  position absolute
+  top 0
+  left 0
+  height 60px
+  width 100%
+  color #ffffff
+  box-sizing border-box
+  z-index 3
+  >.top-left
+    display inline-block
+    vertical-align middle
+    line-height 60px
+    margin-left 53px
+    >img
+      vertical-align middle
+  >.top-right
+    float right
+    margin-right 30px
+    >.top-time
+      height 60px
+      margin 0 auto
+      >div
+        vertical-align middle
+        height 30px
+        line-height 30px
+        text-align center
+  >.top-items
+    float right
+    margin-right 30
+    >.item
+      display inline-block
+      vertical-align middle
+      margin  5px auto
+      margin-right 30px
+      >.img
+        margin 0 auto
+        vertical-align middle
+        text-align center
+        height 25px
+      >.text
+        font-size 12px
+        text-align center
+        margin-top 10px
+  >.top-icon
+    float right
+    margin 0 30px
+    text-align center
+    vertical-align middle
+    >.img
+      display inline-block
+      width 70px
+      margin 6px 15px
+      vertical-align middle
+      text-align center
+      height 100%
+.main-cont
+  position absolute
+  left 52px
+  right 52px
+  top 90px
+  bottom 0
+  color #ffffff
+  height 100%
+  box-sizing border-box
+  z-index 3
+  >.left-cont
+    position absolute
+    left 0
+    height 100%
+    width 320px
+    >div
+      margin-bottom 40px
+    >.power
+      width 314px
+      clear both
+      >#power
+        width 100%
+        height 138px
+        animation bounceInLeft 2s ease
+        animation-iteration-count 1
+      >.data
+        >.item
+          display inline-block
+          width 49%
+          margin-top 15px
+          font-size 14px
+          color #d4d5d5
+    >.waterEnergy
+      >#waterEnergy
+        width 100%
+        height 203px
+        animation bounceInLeft 2s ease
+        animation-iteration-count 1
+    >.lightEnergy
+      >.item
+        display inline-block
+        width 49%
+        text-align center
+        animation bounceInLeft 2s ease
+        animation-iteration-count 1
+        >.pie
+          margin 0 auto
+          width 126px
+          height 122px
+        >.text
+          margin-top 10px
+          font-size 12px
+          color #d4d5d5
+    /*power*/
+    >.subPro
+      margin-top 60px
+      >#sub-item
+        width 100%
+        height 250px
+    >.floor
+      >#floor
+        width 100%
+        height 220px
+  >.center-cont
+    position absolute
+    height 100%
+    left 330px
+    right 330px
+    color #d4d4d5
+    text-align center
+    .powercurve
+      width 100%
+      height 100%
+      >.head
+        font-size 40px
+        margin-top 30px
+      >.toolbar
+        margin 20px auto
+        >.item
+          display inline-block
+          width 150px
+          border 1px solid #253646
+          >.text
+            font-size 16px
+            width 100px
+          >.num
+            margin 5px auto
+            font-size 26px
+      >.powercurvechart
+        width 100%
+        height 60%
+      >.minute
+        font-size 18px
+        margin-top 10px
+  >.right-cont
+    position absolute
+    right 0
+    height 100%
+    width 320px
+    .subtitle
+      margin-bottom 30px
+    >div
+      margin-bottom 60px
+    >.humanTaffic
+      margin-top 40px
+      >#humanTaffic
+        width 100%
+        height 249px
+        animation bounceInRight 2s ease
+        animation-iteration-count 1
+    >.parking
+      width 362px
+      clear both
+      >.item
+        float left
+        width 33.33%
+        text-align center
+        margin-bottom 28px
+        animation bounceInRight 2s ease
+        animation-iteration-count 1
+        >.pie
+          margin 0 auto
+          width 68px
+          height 68px
+        >.text
+          margin-top 10px
+          font-size 12px
+        &:last-child
+          margin-bottom 28px
+    /*power */
+    >.loadCurve
+      margin-top 60px
+      >#loadCurve
+        width 100%
+        height 200px
+    >.floorSubUse
+      >#floorSubUse
+        width 100%
+        height 220px
+  >.light-cont
+    width 100%
+    height 100%
+    >.left-cont
+      position absolute
+      left 0
+      top 0
+      height 100%
+      width 100%
+      >img
+        position absolute
+        top 0
+        left 0
+        height 100%
+        width 100%
+    >.right-cont
+      position absolute
+      right 0
+      height 100%
+      width 67%
+      >.grid
+        margin 10px auto
+        table
+          thead
+            tr
+              th
+              th
+              th
+              th
+              th
+              th
+          tbody
+            tr
+              td
+              td
+              td
+              td
+              td
+              td
+.title
+  margin-left 15px
+  font-size 26px
+  color #d4d4d5
+  margin-bottom 5px
+  vertical-align middle
+  animation bounceInRight 2s ease
+  animation-iteration-count 1
+  &:before
+    position relative
+    content url(../image/right-arror.png)
+    margin-right 10px
+.subtitle
+  font-size 14px
+  margin-bottom 10px
+  color #d4d4d5
+  margin-left 31px
+  animation bounceInRight 2s ease
+  animation-iteration-count 1
+
+
+@keyframes bounceInRight {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+@keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.red
+  color #b02525
+.green
+  color #2fbd43
+.blue
+  color #2862c1

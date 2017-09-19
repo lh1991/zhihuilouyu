@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/basic.css">
+    <title> 智能楼宇监控管理 | </title>
+    <link rel="stylesheet" href="style/index.css">
+  </head>
+  <body>
+    <div class="m-root"></div><img id="chuansuo">
+    <div class="top-fixed clearfix">
+      <div class="top-left"><img src="image/LOGO.png"></div>
+      <div class="top-right">
+        <div class="top-time">
+          <div class="ms">14:39:25</div>
+          <div class="date">31/08/2017</div>
+        </div>
+      </div>
+      <div class="top-icon">
+        <div class="img"><img src="image/tq.png"></div>
+        <div class="img"><img src="image/wd.png"></div>
+      </div>
+      <div class="top-items">
+        <div class="item"><a class="active" href="../index.html"><img src="image/top0.png"></a>
+          <div class="text">主页</div>
+        </div>
+        <div class="item"><a class="img" href="../power.html"><img src="image/top1.png"></a>
+          <div class="text">电组</div>
+        </div>
+        <div class="item"><a class="img" href="../light.html"><img src="image/top2.png"></a>
+          <div class="text">光能</div>
+        </div>
+        <div class="item"><a class="img"><img src="image/top3.png"></a>
+          <div class="text">水能</div>
+        </div>
+        <div class="item"><a class="img"><img src="image/top4.png"></a>
+          <div class="text">人流量</div>
+        </div>
+        <div class="item"><a class="img"><img src="image/top5.png"></a>
+          <div class="text">停车场</div>
+        </div>
+      </div>
+    </div>
+    <div class="main-cont">
+      <div class="light-cont">
+        <div class="left-cont">
+          <!--img#lightIMG-->
+        </div>
+        <div class="right-cont">
+          <div class="grid">
+            <div class="title">光伏发电系统数据表</div>
+            <div class="subtitle">DATE SHEET OF PHOTOVOLTAIC SYSTEM</div>
+          </div>
+          <div class="charts">
+            <div class="item">
+              <div class="pie" id="lightpie1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="lib/echarts.js"></script>
+    <script src="script/basic.js"></script>
+    <script src="lib/jquery.js"></script>
+    <script src="script/light.js"></script>
+  </body>
+</html>

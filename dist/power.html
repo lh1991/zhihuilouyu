@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/basic.css">
+    <title> 智能楼宇监控管理 | </title>
+    <link rel="stylesheet" href="style/index.css">
+  </head>
+  <body>
+    <div class="m-root"></div><img id="chuansuo">
+    <div class="top-fixed clearfix">
+      <div class="top-left"><img src="image/LOGO.png"></div>
+      <div class="top-right">
+        <div class="top-time">
+          <div class="ms">14:39:25</div>
+          <div class="date">31/08/2017</div>
+        </div>
+      </div>
+      <div class="top-icon">
+        <div class="img"><img src="image/tq.png"></div>
+        <div class="img"><img src="image/wd.png"></div>
+      </div>
+      <div class="top-items">
+        <div class="item"><a class="active" href="../index.html"><img src="image/top0.png"></a>
+          <div class="text">主页</div>
+        </div>
+        <div class="item"><a class="img" href="../power.html"><img src="image/top1.png"></a>
+          <div class="text">电组</div>
+        </div>
+        <div class="item"><a class="img" href="../light.html"><img src="image/top2.png"></a>
+          <div class="text">光能</div>
+        </div>
+        <div class="item"><a class="img"><img src="image/top3.png"></a>
+          <div class="text">水能</div>
+        </div>
+        <div class="item"><a class="img"><img src="image/top4.png"></a>
+          <div class="text">人流量</div>
+        </div>
+        <div class="item"><a class="img"><img src="image/top5.png"></a>
+          <div class="text">停车场</div>
+        </div>
+      </div>
+    </div>
+    <div class="main-cont">
+      <div class="left-cont">
+        <div class="subPro">
+          <div class="title">分项用能占比</div>
+          <div class="subtitle">ITEM UTILIZATION</div>
+          <div id="sub-item"></div>
+        </div>
+        <div class="floor">
+          <div class="title">楼层电力使用情况</div>
+          <div class="subtitle">FLOOR POWER USE</div>
+          <div id="floor"></div>
+        </div>
+      </div>
+      <div class="center-cont">
+        <div class="powercurve">
+          <div class="head">神州信源电力监控曲线图</div>
+          <div class="toolbar">
+            <fieldset class="item">
+              <legend class="text">最大值</legend>
+              <div class="num red">576KW</div>
+            </fieldset>
+            <fieldset class="item">
+              <legend class="text">最大值时间</legend>
+              <div class="num red">10:42</div>
+            </fieldset>
+            <fieldset class="item">
+              <legend class="text">最小值</legend>
+              <div class="num green">189KW</div>
+            </fieldset>
+            <fieldset class="item">
+              <legend class="text">最小值时间</legend>
+              <div class="num green">10:42</div>
+            </fieldset>
+            <fieldset class="item">
+              <legend class="text">平均值值</legend>
+              <div class="num blue">385KW</div>
+            </fieldset>
+          </div>
+          <div class="powercurvechart" id="powercurvechart"></div>
+          <div class="minute"> 时间（M）</div>
+        </div>
+      </div>
+      <div class="right-cont">
+        <div class="loadCurve">
+          <div class="title">当日负载曲线</div>
+          <div class="subtitle">DAY LOAD CURVE</div>
+          <div id="loadCurve"></div>
+        </div>
+        <div class="floorSubUse">
+          <div class="title">楼层分项使用占比</div>
+          <div class="subtitle">FLOOR SUB USE</div>
+          <div id="floorSubUse"></div>
+        </div>
+      </div>
+    </div>
+    <script src="lib/echarts.js"></script>
+    <script src="script/basic.js"></script>
+    <script src="lib/jquery.js"></script>
+    <script src="script/power.js"></script>
+  </body>
+</html>
