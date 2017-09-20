@@ -1,6 +1,5 @@
 extends fn/basic.pug
 append script
-  script(src="lib/jquery.js")
   script(src="script/index.js")
 block cont
   .main-cont
@@ -30,14 +29,32 @@ block cont
     .center-cont
       .bottom
         .monitor
+          .camera1
+            .title 大楼数据监控
+            .subtitle ELEVATOR
+            .desc 控摄监像头
+            img(src='./image/home/home-video1.png')
+          .camera-right
+            .camera2
+              .desc 控摄监像头2
+              img(src='./image/home/home-video2-1.png')
+              img(src='./image/home/home-video2-2.png')
+              img(src='./image/home/home-video2-3.png')
+              img(src='./image/home/home-video2-4.png')
+            .camera2
+              .desc 控摄监像头2
+              img(src='./image/home/home-video2-1.png')
+              img(src='./image/home/home-video2-2.png')
+              img(src='./image/home/home-video2-3.png')
+              img(src='./image/home/home-video2-4.png')
     .right-cont
       .humanTaffic
         .title 人流量数据监控
         .subtitle VISITONS FLOWDATE DATE
         #humanTaffic
       .parking
-        .title 电量数据监控
-        .subtitle POWER DATE
+        .title 停车场数据监控
+        .subtitle PARKING LOT DATA
         each val,index in ['A区','B区','C区','D区','E区','F区','G区','H区','I区']
           .item
             .pie(id="pie"+index)
